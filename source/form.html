@@ -37,16 +37,17 @@
     <h1 class="header-h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
   <main class="main">
-    <div class="main-promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</div>
+    <div class="main-promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+    </div>
     <form class="form" action="action.php" method="get">
       <fieldset class="form-name">
         <p>
           <label for="surname">ФАМИЛИЯ:</label>
-          <input type="text" name="surname" id="surname" value="Укажите фамилию *">
+          <input type="text" name="surname" id="surname" required value="Укажите фамилию *">
         </p>
         <p>
           <label for="name">ИМЯ:</label>
-          <input type="text" name="name" id="name" value="Введите ваше имя *">
+          <input type="text" name="name" id="name" value="Введите ваше имя *" required>
         </p>
         <p>
           <label for="patronimic">ОТЧЕСТВО:</label>
@@ -56,7 +57,7 @@
       <fieldset class="progress">
         <legend class="progress__legend-check">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
         <p class="progress">
-          <input class="progress__input-check" type="checkbox" id="1" name="1" checked/>
+          <input class="progress__input-check" type="checkbox" id="1" name="1" checked>
           <label class="progress__label progress__label-checkbox" for="1">Сделал селфи с акулой</label>
         </p>
         <p class="progress">
@@ -91,7 +92,7 @@
           <label for="mail">
             АДРЕС ПОЧТЫ
           </label>
-          <input type="email" name="email" id="mail" placeholder="Введите почту *">
+          <input type="email" name="email" id="mail" required placeholder="Введите почту *">
         </p>
       </fieldset>
       <fieldset class="app">
