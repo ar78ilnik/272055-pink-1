@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Форма</title>
+</head>
+
+<body class="body">
+  <header class="header header-photo">
+    <div class="header-menu">
+      <a class="logo" href="index.html">
+        <img class="logo-image" src="http://placehold.it/150x100" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__menu">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                Конкурс
+              </li>
+              <li class="site-list__item">
+                <a href="academy.html">Html Academy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h1 class="header-h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="main">
+    <div class="main-promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="form-name">
+        <p>
+          <label for="surname">ФАМИЛИЯ:</label>
+          <input type="text" name="surname" id="surname" required value="Укажите фамилию *">
+        </p>
+        <p>
+          <label for="name">ИМЯ:</label>
+          <input type="text" name="name" id="name" value="Введите ваше имя *" required>
+        </p>
+        <p>
+          <label for="patronimic">ОТЧЕСТВО:</label>
+          <input type="text" name="patronimic" id="patronimic" value="Ну и отчество тоже">
+        </p>
+      </fieldset>
+      <fieldset class="progress">
+        <legend class="progress__legend-check">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+        <p class="progress">
+          <input class="progress__input-check" type="checkbox" id="1" name="1" checked>
+          <label class="progress__label progress__label-checkbox" for="1">Сделал селфи с акулой</label>
+        </p>
+        <p class="progress">
+          <input class="progress__input-check" type="checkbox" id="2" name="2" checked/>
+          <label class="progress__label progress__label-checkbox" for="2">Обгорел на пляже</label>
+        </p>
+        <p class="progress">
+          <input class="progress__input-check" type="checkbox" id="3" name="3"/>
+          <label class="progress__label progress__label-checkbox" for="3">Видел Чака Норриса</label>
+        </p>
+        <p class="progress">
+          <input class="progress__input-check" type="checkbox" id="4" name="4"/>
+          <label class="progress__label progress__label-checkbox" for="4">Накупил сувениров</label>
+        </p>
+        <p class="progress">
+          <input class="progress__input-check" type="checkbox" id="5" name="5" checked/>
+          <label class="progress__label progress__label-checkbox" for="5">Удержал башню</label>
+        </p>
+        <p class="progress">
+          <input class="progress__input-check" type="checkbox" id="6" name="6"/>
+          <label class="progress__label progress__label-checkbox" for="6">Разгромил отель</label>
+        </p>
+      </fieldset>
+      <fieldset class="contact">
+        <p class="contact-par">
+          <label for="phone">
+            НОМЕР ТЕЛЕФОНА
+          </label>
+          <input type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"/>
+        </p>
+        <p class="contact-par">
+          <label for="mail">
+            АДРЕС ПОЧТЫ
+          </label>
+          <input type="email" name="email" id="mail" required placeholder="Введите почту *">
+        </p>
+      </fieldset>
+      <fieldset class="app">
+        <p class="app-par">
+          <input type="radio" name="app" id="ios" value="ios">
+          <label for="ios">
+            Pink для iOS
+          </label>
+        </p>
+        <p class="app-par">
+          <input type="radio" name="app" id="android" value="android">
+          <label for="android">
+            Pink на Android
+          </label>
+        </p>
+        <p class="app-par">
+          <input type="radio" name="app" id="wp" value="wp">
+          <label for="wp">
+            Windows Phone
+          </label>
+        </p>
+      </fieldset>
+      <fieldset class="message">
+        <label for="mess">
+          ОПИШИТЕ СВОИ ЭМОЦИИ
+        </label>
+        <textarea id="mess" name="message">
+          Можно прям в красках, не стесняясь в выражениях
+        </textarea>
+      </fieldset>
+      <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+      <div class="abr">
+        <abbr>*</abbr> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="logo">
+
+    </div>
+    <section class="footer-social">
+      <h2 class="visually-hiden">Социальные сети</h2>
+      <a class="footer-social__button footer-social__twitter" href="#">twitter</a>
+      <a class="footer-social__button footer-social__facebook" href="#">facebook</a>
+      <a class="footer-social__button footer-social__youtube" href="#">youtube</a>
+    </section>
+    <section class="footer-copyright">
+      <h2 class="visually-hiden">Защита авторских прав</h2>
+      Разработано
+    </section>
+  </footer>
+</body>
+
+</html>
