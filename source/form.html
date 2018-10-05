@@ -4,40 +4,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Форма</title>
 </head>
 
 <body class="body">
-  <header class="header header-photo">
-    <div class="header-menu">
-      <a class="logo" href="index.html">
-        <img class="logo-image" src="http://placehold.it/150x100" alt="Логотип Pink">
-      </a>
-      <nav class="main-nav">
-        <div class="main-nav__menu">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                Конкурс
-              </li>
-              <li class="site-list__item">
-                <a href="academy.html">Html Academy</a>
-              </li>
-            </ul>
-          </div>
+  <header class="header header-form">
+    <div class="menu-noindex">
+      <div class="menu-top">
+        <div class="wrapper wrapper_header">
+          <a class="logo" href="index.html">
+            <img class="logo-image" src="../img/logo-pink-white-mobile.svg" href="index.html" alt="Логотип Pin">
+          </a>
+          <nav class="main-nav">
+            <div class="main-nav__menu">
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                  <li class="site-list__item">
+                    <a href="index.html">Главная</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="site-list__item">
+                    Конкурс
+                  </li>
+                  <li class="site-list__item">
+                    <a href="academy.html">Html Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
-    <h1 class="header-h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <h1 class="header__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
-  <main class="main">
-    <div class="main-promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+  <main class="main wrapper">
+    <div class="main__promo-form">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
     </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="form-name">
@@ -129,19 +134,21 @@
       </div>
     </form>
   </main>
-  <footer class="footer">
+  <footer class="footer wrapper">
     <div class="logo">
-
+      Pink
     </div>
     <section class="footer-social">
       <h2 class="visually-hiden">Социальные сети</h2>
-      <a class="footer-social__button footer-social__twitter" href="#">twitter</a>
-      <a class="footer-social__button footer-social__facebook" href="#">facebook</a>
-      <a class="footer-social__button footer-social__youtube" href="#">youtube</a>
+      <a class="footer-social__button footer-social__button_twitter" href="#">twitter</a>
+      <a class="footer-social__button footer-social__button_facebook" href="#">facebook</a>
+      <a class="footer-social__button footer-social__button_youtube" href="#">youtube</a>
     </section>
     <section class="footer-copyright">
       <h2 class="visually-hiden">Защита авторских прав</h2>
-      Разработано
+      <a class="footer-copyright__link">
+        Разработано
+      </a>
     </section>
   </footer>
 </body>
