@@ -6,34 +6,41 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="body wrapper">
-  <header class="page-header">
+  <body class="body">
+  <header class="header">
     <div class="header-menu">
+      <div class="top-menu">
+        <div class="wrapper wrapper_header">
       <a class="logo" href="index.html">
-        <img class="logo-image" src="http://placehold.it/150x100" alt="Логотип Pink">
+        <img class="logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
-        <div class="main-nav__menu">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                Главная
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a href="konkurs.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a href="academy.html">Html Academy</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+          <ul class="main-nav__list site-list">
+             <li class="site-list__item">
+               Главная
+             </li>
+             <li class="site-list__item">
+               <a href="photo.html">Фотографии</a>
+             </li>
+             <li class="site-list__item">
+               <a href="konkurs.html">Конкурс</a>
+             </li>
+             <li class="site-list__item">
+               <a href="academy.html">Html Academy</a>
+             </li>
+           </ul>
       </nav>
     </div>
+    </div>
+    </div>
+    <div class="wrapper wrapper_header">
     <div class="header-apps">
+      <span class="header-apps__slogan">
+        Взгляните<br>на жизнь<br>иначе
+      </span>
       <a class="header-apps__button" href="#">Скачать приложение</a>
       <div class="header-apps__links">
         <a class="header-apps__link header-apps__link_apple" href="#">Apple</a>
@@ -43,6 +50,7 @@
       <span class="header-apps__publi">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
       </span>
     </div>
+  </div>
   </header>
   <main class="main wrapper">
     <h1 class="visually-hiden">Pink - приложение для публикаций фотографий</h1>

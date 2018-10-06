@@ -1,0 +1,81 @@
+.header-apps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-apps__slogan {
+  display: none;
+}
+.header-apps__button {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 27px;
+  padding: 12px 36px;
+  margin-top: 30px;
+}
+.header-apps__button:hover {
+  background-color: #fff;
+  color: #d22856;
+}
+.header-apps__links {
+  width: 205px;
+  height: 57px;
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+.header-apps__link {
+  display: block;
+  width: 46px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  &_apple {
+    background-image: url("../img/logo-apple.svg");
+  }
+  &_android {
+    background-image: url("../img/logo-android.svg");
+  }
+  &_ms {
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}
+.header-apps__publi {
+  color: #ffffff;
+  font-family: "Open Sans";
+  margin-top: 27px;
+  margin-bottom: 36px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 660px) {
+  .header-apps {
+    position: absolute;
+    top: 92px;
+    left: 20px;
+    width: 300px;
+    padding-top: 106px;
+  }
+  .header-apps__slogan {
+    display: inline;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 40px;
+  }
+  .header-apps__button {
+    margin-top: 18px;
+  }
+  .header-apps__publi {
+    font-size: 17px;
+  }
+}
