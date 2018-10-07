@@ -51,3 +51,27 @@
     left: 0;
   }
 }
+
+@media screen and (min-width: 660px) {
+  .photo-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .photo__edit {
+    display: flex;
+    justify-content: space-between;
+  }
+  .photo__container {
+    flex-basis: 48.387%;
+  }
+  .photo__item {
+    flex-basis: 48.387%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .photo__item {
+    flex-basis: 31.25%;
+  }
+}

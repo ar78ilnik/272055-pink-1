@@ -1,0 +1,47 @@
+.effect {
+  display: none;
+}
+
+@media screen and (min-width: 660px) {
+  .effect {
+    display: flex;
+    flex-direction: row;
+  }
+  .effect__container {
+    width: 50%;
+    margin-top: 69px;
+  }
+  .effect__title {
+    font-size: 30px;
+    font-weight: 700;
+    width: 54%;
+    line-height: 38px;
+    margin-bottom: 11px;
+  }
+  .effect__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #283645;
+    line-height: 26px;
+  }
+  .effect__link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #d22856;
+  }
+  .effect__bg {
+    width: 50%;
+    height: 487px;
+    order: -1;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .effect {
+    width: 960px;
+    padding-top: 300px;
+  }
+}

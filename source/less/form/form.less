@@ -1,0 +1,47 @@
+@media screen and (min-width: 660px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__name {
+    border: none;
+    order: 0;
+  }
+  .form__app {
+    border: none;
+    order: 1;
+  }
+  .form__contact {
+    border: none;
+    order: 2;
+  }
+  .form__progress {
+    border: none;
+    order: 3;
+  }
+  .form__message {
+    border: none;
+    order: 4;
+  }
+  .form__input {
+    display: flex;
+    justify-content: space-between;
+    order: 5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form__name {
+    flex-basis: 50%;
+  }
+  .form__app {
+    flex-basis: 50%;
+    order: 1;
+  }
+}

@@ -17,3 +17,41 @@
   font-weight: 300;
   color: #d22856;
 }
+
+@media screen and (min-width: 660px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__h2 {
+    font-size: 40px;
+  }
+  .footer__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer__contact {
+    width: 50%;
+  }
+  .footer__contact:last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__h2 {
+    font-size: 50px;
+  }
+  .footer__contact {
+    width: 30%;
+  }
+  .footer__contact:first-child {
+    order: -1;
+  }
+  .footer__contact:last-child {
+    width: 30%;
+    order: 0;
+  }
+}

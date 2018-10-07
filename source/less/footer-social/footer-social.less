@@ -1,6 +1,5 @@
 .footer-social {
-  width: 178px;
-  height: auto;
+  display: none;
 }
 .footer-social__button {
   font-size: 0;
@@ -33,5 +32,17 @@
     background-image: url("../img/icon-youtube.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-social__links {
+    width: 180px;
+    display: flex;
   }
 }
