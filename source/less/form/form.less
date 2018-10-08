@@ -36,12 +36,51 @@
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .form__name {
-    flex-basis: 50%;
+    width: 400px;
+    order: 0;
   }
   .form__app {
-    flex-basis: 50%;
+    width: 400px;
     order: 1;
+  }
+  .form__contact {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    &_par {
+      display: flex;
+      flex-direction: column;
+    }
+  .form__dates {
+      order: 1;
+      &_message {
+        width: 100%;
+      }
+    }
+  .form__input-button {
+      order: 0;
+   }
+  }
+  .form__progress {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &_legend-check {
+      width: 100%;
+    }
+    &_box {
+      flex-basis: 260px;
+    }
+  }
+  .form__message {
+    flex-basis: 100%;
+  }
+  .form__input {
+    flex-basis: 100%;
+    justify-content: space-between;
   }
 }
