@@ -6,34 +6,41 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="body wrapper">
-  <header class="page-header">
+  <body class="body">
+  <header class="header">
     <div class="header-menu">
+      <div class="top-menu">
+        <div class="wrapper wrapper_header">
       <a class="logo" href="index.html">
-        <img class="logo-image" src="http://placehold.it/150x100" alt="Логотип Pink">
+        <img class="logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
       </a>
-      <nav class="main-nav">
-        <div class="main-nav__menu">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                Главная
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a href="konkurs.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a href="academy.html">Html Academy</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav class="main-nav main-nav__wrapper main-nav__wrapper_top main-nav__wrapper_closed">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+          <ul class="main-nav__list">
+             <li class="main-nav__item">
+               Главная
+             </li>
+             <li class="main-nav__item">
+               <a class="main-nav__link" href="photo.html">Фотографии</a>
+             </li>
+             <li class="main-nav__item">
+               <a class="main-nav__link" href="form.html">Конкурс</a>
+             </li>
+             <li class="main-nav__item">
+               <a class="main-nav__link" href="academy.html">Html Academy</a>
+             </li>
+           </ul>
       </nav>
     </div>
+    </div>
+    </div>
+    <div class="wrapper wrapper_header">
     <div class="header-apps">
+      <span class="header-apps__slogan">
+        Взгляните<br>на жизнь<br>иначе
+      </span>
       <a class="header-apps__button" href="#">Скачать приложение</a>
       <div class="header-apps__links">
         <a class="header-apps__link header-apps__link_apple" href="#">Apple</a>
@@ -43,33 +50,47 @@
       <span class="header-apps__publi">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
       </span>
     </div>
+  </div>
   </header>
   <main class="main wrapper">
     <h1 class="visually-hiden">Pink - приложение для публикаций фотографий</h1>
     <h2 class="main__slogan">Устали от серости мегаполиса?</h2>
     <h2 class="main__slogan main__slogan-two">Нам есть, что вам предложить!</h2>
-    <section class="main-promo">
+    <section class="promo wrapper">
       <h3 class="visually-hiden">
         Блок преимуществ приложения Pink
       </h3>
-      <div class="main-container wrapper">
-        <article class="main-container__article main-container__article1">
-          <h3 class="main-container__h1">Поднимает настроение</h3>
-          <span class="main-container__body">Приложение позволит вам победить
+      <div class="promo-container">
+        <article class="promo-container__article promo-container__article_1">
+          <h3 class="promo-container__h3">Поднимает настроение</h3>
+          <span class="promo-container__body">Приложение позволит вам победить
             осеннюю хандру и депрессию буквально в несколько кликов!
           </span>
         </article>
-        <article class="main-container__article main-container__article2">
-          <h3 class="main-container__h1">Меняет мир вокруг</h3>
-          <span class="main-container__body">Сделайте снимок и украсьте его
+        <article class="promo-container__article promo-container__article_2">
+          <h3 class="promo-container__h3">Меняет мир вокруг</h3>
+          <span class="promo-container__body">Сделайте снимок и украсьте его
             смайликом или текстовой подписью, чтобы усилить эффект
           </span>
         </article>
-        <article class="main-container__article main-container__article3">
-          <h3 class="main-container__h1">Заводит новых друзей</h3>
-          <span class="main-container__body">Ставьте лайки, комментируйте, делитесь фотографиями и заводите новых
+        <article class="promo-container__article promo-container__article_3">
+          <h3 class="promo-container__h3">Заводит новых друзей</h3>
+          <span class="promo-container__body">Ставьте лайки, комментируйте, делитесь фотографиями и заводите новых
           </span>
         </article>
+      </div>
+      <div class="promo-bg"></div>
+    </section>
+    <section class="effect wrapper">
+      <h3 class="visually-hiden">Доказан эффект от приложения</h3>
+      <div class="effect__container">
+        <h3 class="effect__title">Эффект на 24 часа</h3>
+        <article class="effect__text">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </article>
+        <a class="effect__link" href="#">Узнать больше об исследовании</a>
+      </div>
+      <div class="effect__bg">
       </div>
     </section>
     <section class="reviews">
@@ -116,49 +137,77 @@
         </div>
       </div>
     </section>
-    <div class="price">
-      <ul class="price__list slider__list">
-        <li class="price__item">
-          <table>
-            <tr>
-              <th>Стандарт<br>3,99 USD</th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-            </tr>
-          </table>
-        </li>
-      </ul>
-    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="table__th">БАЗА<br><span class="table__price">1,99 USD</span></th>
+          <th class="table__th">СТАНДАРТ<br><span class="table__price">3,99 USD</span></th>
+          <th class="table__th">АНЛИМ<br><span class="table__price">9,99 USD</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table__td table__td_features">Розовый фильтр</td>
+          <td class="table__td table__td_yes">yes</td>
+          <td class="table__td table__td_yes">yes</td>
+          <td class="table__td table__td_yes">yes</td>
+        </tr>
+        <tr>
+          <td class="table__td table__td_features">Смайлики</td>
+          <td class="table__td table__td_no">no</td>
+          <td class="table__td table__td_yes">yes</td>
+          <td class="table__td table__td_yes">yes</td>
+        </tr>
+        <tr>
+          <td class="table__td table__td_features">Комментарии</td>
+          <td class="table__td table__td_no">no</td>
+          <td class="table__td table__td_no">no</td>
+          <td class="table__td table__td_yes">yes</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
   <footer class="footer wrapper">
     <h2 class="footer__h2">Остались вопросы? Свяжитесь с нами!</h2>
-    <article class="footer__contact">
-      <h3 class="footer__title">
-        Звоните:
-      </h3>
-      <a class="footer__number" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
-    </article>
-    <article class="footer__contact">
-      <h3 class="footer__title">
-        Пишите:
-      </h3>
-      <a class="footer__number" href="mailto:mail@htmlacademy.ru">mail@htmlacademy</a>
-    </article>
-    <article class="footer__contact">
-      <h3 class="footer__title">
-        Приезжайте в гости:
-      </h3>
-      <address class="footer__number">
-        ул. Большая Конюшенная, 19/8
-      </address>
-    </article>
+    <div class="footer__main">
+      <article class="footer__contact">
+        <h3 class="footer__title">
+          Звоните:
+        </h3>
+        <a class="footer__number" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+      </article>
+      <article class="footer__contact">
+        <h3 class="footer__title">
+          Пишите:
+        </h3>
+        <a class="footer__number" href="mailto:mail@htmlacademy.ru">  mail@htmlacademy</a>
+      </article>
+      <article class="footer__contact">
+        <h3 class="footer__title">
+          Приезжайте в гости:
+        </h3>
+        <address class="footer__number">
+          ул. Большая Конюшенная, 19/8
+        </address>
+      </article>
+    </div>
+    <section class="footer-social">
+      <h2 class="visually-hiden">Социальные сети</h2>
+      <a class="logo" href="index.html">
+        <img class="logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+      </a>
+      <div class="footer-social__links">
+        <a class="footer-social__button footer-social__button_twitter" href="#">twitter</a>
+        <a class="footer-social__button footer-social__button_facebook" href="#">facebook</a>
+        <a class="footer-social__button footer-social__button_youtube" href="#">youtube</a>
+      </div>
+      <div class="footer-copyright">
+        <a class="footer-copyright__link">
+          Разработано
+        </a>
+      </div>
+    </section>
   </footer>
   </body>
 </html>
