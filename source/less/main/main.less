@@ -1,20 +1,22 @@
+/*main/main.less*/
 
+.main {
+  margin-bottom: 100px;
+}
 .main__h1 {
   display: none;
 }
-.main {
-  &__promo-photo {
-  padding-bottom: 300px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 463px;
-  }
-}
 .main__slogan {
+  display: block;
   font-size: 24px;
+  line-height: 31px;
   color: #283645;
   font-weight: 300;
   text-align: center;
+  padding: 38px 0 8px;
+  &_two {
+    padding-top: 17px;
+  }
 }
 .main-container__article {
   text-align: center;
@@ -31,7 +33,7 @@
   font-size: 14px;
   font-weight: 400;
 }
-.main__promo-photo {
+.main__promo_photo {
   font-size: 14px;
   line-height: 30px;
   font-weight: 300;
@@ -40,5 +42,14 @@
   width: 72.5%;
   margin: 0 auto;
   padding-top: 45px;
-  margin-bottom: 49px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 660px) {
+  .main__promo_photo {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    padding-top: 93px;
+  }
 }

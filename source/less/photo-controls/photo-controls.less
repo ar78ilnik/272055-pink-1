@@ -1,3 +1,96 @@
+/*photo-controls/photo-controls.less*/
+
+.photo-controls__scales {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.photo-controls__button {
+  font-size: 0;
+  border: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  &_crop {
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &_saturation {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &_bright {
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.photo-controls__bars {
+  width: 240px;
+  height: 14px;
+  margin: 0 auto;
+  position: relative;
+  padding: 37px 0 61px 0;
+}
+.photo-controls__bar {
+  height: 2px;
+  background-color: #283645;
+}
+.photo-controls__fill {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  top: 31px;
+  right: 36px;
+}
+.photo-controls__input {
+  background-color: #f2f2f2;
+}
+.photo-controls__input-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
+  &_done {
+    color: #d22856;
+    border: 2px solid #d22856;
+  }
+  &_cancel {
+    color: #283645;
+    border: 2px solid #283645;
+  }
+}
+.photo-controls__button-input {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  &_done {
+    display: block;
+    color: #d22856;
+    border: 3px solid #d22856;
+    padding: 15px 94px;
+    border-radius: 30px;
+    margin-bottom: 13px;
+  }
+  &_cancel {
+    display: block;
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+    padding: 15px 94px;
+    border-radius: 30px;
+  }
+}
 @media screen and (min-width: 660px) {
   .photo-controls {
     flex-basis: 48.387%;

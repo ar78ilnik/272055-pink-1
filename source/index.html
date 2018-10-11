@@ -11,30 +11,32 @@
     <div class="header-menu">
       <div class="top-menu">
         <div class="wrapper wrapper_header">
-      <a class="logo" href="index.html">
-        <img class="logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-      </a>
-      <nav class="main-nav main-nav__wrapper main-nav__wrapper_top main-nav__wrapper_closed">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
-          <ul class="main-nav__list">
-             <li class="main-nav__item">
-               Главная
-             </li>
-             <li class="main-nav__item">
-               <a class="main-nav__link" href="photo.html">Фотографии</a>
-             </li>
-             <li class="main-nav__item">
-               <a class="main-nav__link" href="form.html">Конкурс</a>
-             </li>
-             <li class="main-nav__item">
-               <a class="main-nav__link" href="academy.html">Html Academy</a>
-             </li>
-           </ul>
-      </nav>
-    </div>
-    </div>
+          <div class="logo-box">
+            <a class="logo-box__link" href="index.html">
+              <img class="logo-box__link" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </a>
+            <button class="logo-box__toggle" type="button">
+              Открыть меню
+            </button>
+          </div>
+          </div>
+          <nav class="main-nav">
+              <ul class="main-nav__list">
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="#">Главная</a>
+                 </li>
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="photo.html">Фотографии</a>
+                 </li>
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="form.html">Конкурс</a>
+                 </li>
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="academy.html">Html Academy</a>
+                 </li>
+               </ul>
+          </nav>
+      </div>
     </div>
     <div class="wrapper wrapper_header">
     <div class="header-apps">
@@ -55,7 +57,7 @@
   <main class="main wrapper">
     <h1 class="visually-hiden">Pink - приложение для публикаций фотографий</h1>
     <h2 class="main__slogan">Устали от серости мегаполиса?</h2>
-    <h2 class="main__slogan main__slogan-two">Нам есть, что вам предложить!</h2>
+    <h2 class="main__slogan main__slogan_two">Нам есть, что вам предложить!</h2>
     <section class="promo wrapper">
       <h3 class="visually-hiden">
         Блок преимуществ приложения Pink
@@ -129,17 +131,17 @@
           </p>
         </article>
         <button class="reviews__toggle reviews__toggle--prev">prev</button>
-        <button class="reviews__toggle reviews__toggle--prev">next</button>
-        <div class="slider-roundes reviews__nav">
-          <label class="slider-items__btn" for="reviews1">1</label>
-          <label class="slider-items__btn" for="reviews2">2</label>
-          <label class="slider-items__btn" for="reviews3">3</label>
+        <button class="reviews__toggle reviews__toggle--next">next</button>
+        <div class="slider-items">
+          <label for="reviews1"></label>
+          <label for="reviews2"></label>
+          <label for="reviews3"></label>
         </div>
       </div>
     </section>
     <table class="table">
       <thead>
-        <tr>
+        <tr class="table__tr wrapper">
           <th></th>
           <th class="table__th">БАЗА<br><span class="table__price">1,99 USD</span></th>
           <th class="table__th">СТАНДАРТ<br><span class="table__price">3,99 USD</span></th>
@@ -147,19 +149,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="table__tr">
           <td class="table__td table__td_features">Розовый фильтр</td>
           <td class="table__td table__td_yes">yes</td>
           <td class="table__td table__td_yes">yes</td>
           <td class="table__td table__td_yes">yes</td>
         </tr>
-        <tr>
+        <tr class="table__tr">
           <td class="table__td table__td_features">Смайлики</td>
           <td class="table__td table__td_no">no</td>
           <td class="table__td table__td_yes">yes</td>
           <td class="table__td table__td_yes">yes</td>
         </tr>
-        <tr>
+        <tr class="table__tr">
           <td class="table__td table__td_features">Комментарии</td>
           <td class="table__td table__td_no">no</td>
           <td class="table__td table__td_no">no</td>

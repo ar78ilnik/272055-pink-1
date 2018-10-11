@@ -9,133 +9,141 @@
 </head>
 
 <body class="body">
-  <header class="header header-form">
-    <div class="menu-noindex">
-      <div class="menu-top">
+  <header class="header header_photo">
+    <div class="header-menu header-menu_photo">
+      <div class="top-menu">
         <div class="wrapper wrapper_header">
-          <a class="logo" href="index.html">
-            <img class="logo-image" src="../img/logo-pink-white-mobile.svg" href="index.html" alt="Логотип Pin">
-          </a>
-          <nav class="main-nav">
-            <div class="main-nav__menu">
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                  <li class="site-list__item">
-                    <a href="index.html">Главная</a>
-                  </li>
-                  <li class="site-list__item">
-                    Фотографии
-                  </li>
-                  <li class="site-list__item">
-                    <a href="form.html">Конкурс</a>
-                  </li>
-                  <li class="site-list__item">
-                    <a href="academy.html">Html Academy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <div class="logo-box">
+          <a class="logo-box__link" href="index.html">
+              <img class="logo-box__link" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </a>
+            <button class="logo-box__toggle" type="button">
+              Открыть меню
+            </button>
+          </div>
         </div>
+          <nav class="main-nav">
+              <ul class="main-nav__list">
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="#">Главная</a>
+                 </li>
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="photo.html">Фотографии</a>
+                 </li>
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="form.html">Конкурс</a>
+                 </li>
+                 <li class="main-nav__item">
+                   <a class="main-nav__link" href="academy.html">Html Academy</a>
+                 </li>
+               </ul>
+          </nav>
       </div>
+      <h1 class="header__h1">Фотографии пользователей</h1>
     </div>
-    <h1 class="header__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
-  <main class="main wrapper">
-    <div class="main__promo-photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
+  <main class="main">
+    <div class="main__promo_photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
     <section class="photo">
       <h2 class="visually-hiden">Блок фотографий дня пользователей</h2>
       <div class="photo-head">
-          <img src="../img/panorama-mobile@1x.jpg" alt="Лес с высоты кабины канатной дороги">
+          <picture>
+            <source srcset="../img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="../img/panorama-mobile@1x.jpg" alt="Лес с высоты кабины канатной дороги">
+          </picture>
         <div class="photo-head__comment wrapper">
           <blockquote class="photo-head__author">Анна<span class="photo-head__time">(5 МИНУТ НАЗАД)</span></blockquote>
-          <p class="photo-head_store">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          <p class="photo-head__store">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
           <footer class="photo-head__like">НРАВИТСЯ: 215</footer>
         </div>
       </div>
     </section>
-    <section class="photo-main">
+    <section class="photo-main wrapper">
       <h2 class="visually-hiden">Блок фотографий пользователей</h2>
       <div class="photo__item">
         <img src="../img/photo-car-mobile@1x.jpg" alt="Фотография машины сбоку">
-        <blockquote class="photo-head__author">Левон<span class="photo-head__time">(5 ЧАСОВ НАЗАД)</span></blockquote>
-        <p class="photo-head_store">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <footer class="photo-head__like">НРАВИТСЯ: 356</footer>
+        <div class="photo__item_main">
+          <blockquote class="photo-head__author photo-head__author_main">Левон <span class="photo-head__time">(5 ЧАСОВ НАЗАД)</span></blockquote>
+          <p class="photo-head__store">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <footer class="photo-head__like">НРАВИТСЯ: 356</footer>
+        </div>
       </div>
       <div class="photo__item">
         <img src="../img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
-        <blockquote class="photo-head__author">Антон<span class="photo-head__time">(12 ЧАСОВ НАЗАД)</span></blockquote>
-        <p class="photo-head_store">Соседи будут рады!</p>
-        <footer class="photo-head__like">НРАВИТСЯ: 666</footer>
+        <div class="photo__item_main">
+          <blockquote class="photo-head__author photo-head__author_main">Антон <span class="photo-head__time">(12 ЧАСОВ НАЗАД)</span></blockquote>
+          <p class="photo-head__store">Соседи будут рады!</p>
+          <footer class="photo-head__like">НРАВИТСЯ: 666</footer>
+        </div>
       </div>
       <div class="photo__item">
         <img src="../img/photo-window-mobile@1x.jpg" alt="Вид на небо через стеклянную крышу">
-        <blockquote class="photo-head__author">Борис<span class="photo-head__time">(20 ЧАСОВ НАЗАД)</span></blockquote>
-        <p class="photo-head_store">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <footer class="photo-head__like">НРАВИТСЯ: 215</footer>
+        <div class="photo__item_main">
+          <blockquote class="photo-head__author photo-head__author_main">Борис <span class="photo-head__time">(20 ЧАСОВ НАЗАД)</span></blockquote>
+          <p class="photo-head__store">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <footer class="photo-head__like">НРАВИТСЯ: 215</footer>
+        </div>
       </div>
       <div class="photo__item">
         <img src="../img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
-        <blockquote class="photo-head__author">Сергей<span class="photo-head__time">(25 ЧАСОВ НАЗАД)</span></blockquote>
-        <p class="photo-head_store">Самая кубанская в мире!</p>
-        <footer class="photo-head__like">НРАВИТСЯ: 4</footer>
+        <div class="photo__item_main">
+          <blockquote class="photo-head__author photo-head__author_main">Сергей <span class="photo-head__time">(25 ЧАСОВ НАЗАД)</span></blockquote>
+          <p class="photo-head__store">Самая кубанская в мире!</p>
+          <footer class="photo-head__like">НРАВИТСЯ: 4</footer>
+        </div>
       </div>
       <div class="photo__item">
         <img src="../img/photo-pov-mobile@1x.jpg" alt="Фотография с горы">
-        <blockquote class="photo-head__author">Максим<span class="photo-head__time">(40 ЧАСОВ НАЗАД)</span></blockquote>
-        <p class="photo-head_store">Где снег-то?</p>
-        <footer class="photo-head__like">НРАВИТСЯ: 150</footer>
+        <div class="photo__item_main">
+          <blockquote class="photo-head__author photo-head__author_main">Максим <span class="photo-head__time">(40 ЧАСОВ НАЗАД)</span></blockquote>
+          <p class="photo-head__store">Где снег-то?</p>
+          <footer class="photo-head__like">НРАВИТСЯ: 150</footer>
+        </div>
       </div>
       <div class="photo__item">
         <img src="../img/photo-wing-mobile@1x.jpg" alt="Крыло самолета на фоне неба">
-        <blockquote class="photo-head__author">Надежда<span class="photo-head__time">(45 ЧАСОВ НАЗАД)</span></blockquote>
-        <p class="photo-head_store">Всем GM и взаимные лайки!</p>
-        <footer class="photo-head__like">НРАВИТСЯ: 2560</footer>
+          <div class="photo__item_main">
+          <blockquote class="photo-head__author photo-head__author_main">Надежда <span class="photo-head__time">(45 ЧАСОВ НАЗАД)</span></blockquote>
+          <p class="photo-head__store">Всем GM и взаимные лайки!</p>
+          <footer class="photo-head__like">НРАВИТСЯ: 2560</footer>
+        </div>
       </div>
-    <p class="photo-footer">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    <p class="photo-footer wrapper">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
-    <article class="photo__edit">
+    <article class="photo__edit wrapper">
       <h2 class="visually-hiden">Редактирование фотографий</h2>
       <div class="photo__container">
         <img src="../img/photo-road-mobile@1x.jpg" alt="Дорога через зимний лес">
       </div>
       <div class="photo-controls">
         <div class="photo-controls__scales">
-          <div class="photo-controls__block photo-controls_crop">
-            <button class="photo-controls__button photo-controls__button--crop" type="button">crop</button>
-            <div class="photo-controls__scale_block">
-              <div class="photo-controls__bar"></div>
-              <div class="photo-controls__fill"></div>
-            </div>
+          <div class="photo-controls__block">
+            <button class="photo-controls__button photo-controls__button_crop" type="button">crop</button>
           </div>
-          <div class="photo-controls__block photo-controls_saturation">
-            <button class="photo-controls__button photo-controls__button--saturation" type="button">saturation</button>
-            <div class="photo-controls__scale_block">
-              <div class="photo-controls__bar"></div>
-              <div class="photo-controls__fill"></div>
-            </div>
+          <div class="photo-controls__block">
+            <button class="photo-controls__button photo-controls__button_saturation" type="button">saturation</button>
           </div>
-          <div class="photo-controls__block photo-controls_bright">
-            <button class="photo-controls__button photo-controls__button--bright" type="button">bright</button>
-            <div class="photo-controls__scale_block">
-              <div class="photo-controls__bar"></div>
-              <div class="photo-controls__fill"></div>
-            </div>
+          <div class="photo-controls__block">
+            <button class="photo-controls__button photo-controls__button_bright" type="button">bright</button>
           </div>
         </div>
-        <div class="photo-input">
-          <button class="photo-input__button photo-input__button_done" type="button">Запостить</button>
-          <button class="photo-input__button photo-input__button_cancel" type="button">Отмена</button>
+        <div class="photo-controls__bars">
+          <div class="photo-controls__bar"></div>
+          <div class="photo-controls__fill"></div>
+        </div>
+        <div class="photo-controls__input">
+          <button class="photo-controls__button-input photo-controls__button-input_done" type="button">Запостить</button>
+          <button class="photo-controls__button-input photo-controls__button-input_cancel" type="button">Отмена</button>
         </div>
       </div>
     </article>
   </main>
   <footer class="footer wrapper">
-    <div class="logo">
+    <div class="logo-box logo-box_photo">
       Pink
     </div>
-    <section class="footer-social">
+    <section class="footer-social footer-social_photo">
       <h2 class="visually-hiden">Социальные сети</h2>
       <a class="footer-social__button footer-social__button_twitter" href="#">twitter</a>
       <a class="footer-social__button footer-social__button_facebook" href="#">facebook</a>

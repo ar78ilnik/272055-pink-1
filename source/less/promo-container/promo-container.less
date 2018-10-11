@@ -1,16 +1,32 @@
-.promo-container__body {
-  font-family: "Open Sans";
+.promo-container {
+  padding-top: 105px;
+  &::after {
+    content: "";
+    display: block;
+    height: 330px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 31px;
+  }
+}
+.promo-container__article {
+  margin: 0 auto 12px;
+  text-align: center;
 }
 .promo-container__h3 {
-    font-size: 18px;
-    line-height: 24px;
+    margin: 0 0 15px;
     color: #000000;
-    font-weight: 700;
-  }
-.promo-container__body {
     font-size: 14px;
-    font-weight: 400;
-    color: #283645;
+    font-weight: 700;
+    line-height: 24px;
+}
+.promo-container__body {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
 }
 
 @media screen and (min-width: 660px) {
