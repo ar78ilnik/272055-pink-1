@@ -22,6 +22,9 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+  &_twitter:hover {
+    border: 2px solid #273545;
+  }
   &_facebook {
     display: block;
     width: 50px;
@@ -31,6 +34,9 @@
     background-image: url("../img/icon-facebook.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+  &_facebook:hover {
+    border: 2px solid #273545;
   }
   &_youtube {
     display: block;
@@ -42,13 +48,18 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+  &_youtube:hover {
+    border: 2px solid #273545;
+  }
 }
 
 @media screen and (min-width: 660px) {
   .footer-social {
     display: flex;
+    flex-basis: 178px;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
   }
   .footer-social__links {
     width: 180px;

@@ -83,12 +83,30 @@
     border-radius: 30px;
     margin-bottom: 13px;
   }
+  &_done:hover {
+    background-color: #d22856;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  &_done:active {
+    color: #df6888;
+  }
   &_cancel {
     display: block;
     color: #dddfe0;
     border: 3px solid #dddfe0;
     padding: 15px 94px;
     border-radius: 30px;
+  }
+  &_cancel:hover {
+    color: #b5b9be;
+    border: 3px solid #b5b9be;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  &_cancel:active {
+    color: #cbced2;
+    background-color: #b5b9de;
   }
 }
 @media screen and (min-width: 660px) {
