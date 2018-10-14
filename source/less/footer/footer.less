@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 660px) {
   .footer {
-    height: 128px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -50,7 +50,17 @@
 
 @media screen and (min-width: 1200px) {
   .footer__h2 {
+    width: 480px;
     font-size: 50px;
+    line-height: 62px;
+  }
+  .footer__main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__contact {
+    width: 30%;
+    padding-top: 45px;
   }
   .footer__contact:nth-child(0) {
     order: 0;
@@ -61,14 +71,14 @@
   .footer__contact:nth-child(2) {
     order: 1;
   }
-  .footer__contact {
-    width: 30%;
-  }
   .footer__contact:first-child {
     order: -1;
   }
   .footer__contact:last-child {
     width: 30%;
     order: 0;
+  }
+  .footer__number {
+    padding-top: 10px;
   }
 }
