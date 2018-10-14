@@ -1,27 +1,32 @@
 /*wrapper/wrapper.less*/
 
 .wrapper {
-    width: 87.5%;
-    margin: 0 auto;
+  width: 87.5%;
+  margin: 0 auto;
 }
-.wrapper_header {
+/*.wrapper__header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
+  height: 110px;
+}*/
 
 @media screen and (min-width: 660px) {
   .wrapper {
-    width: 93.9393%;
+    width: 620px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 960px;
-    height: 110px;
+    width: 940px;
+    &_until-desk {
+      width: 150px;
+    }
+    &_desktop {
+      width: 940px;
+      margin: 0 auto;
+    }
   }
 }

@@ -6,10 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &_photo {
-    height: auto;
-    margin-bottom: 36px;
-  }
 }
 .logo-box__toggle {
   font-size: 0;
@@ -22,7 +18,7 @@
 
 @media screen and (min-width: 660px) {
   .logo-box {
-    flex-basis: 150px;
+    width: 150px;
     &_photo {
       margin: 0;
     }
@@ -31,7 +27,8 @@
 
 @media screen and (min-width: 1200px) {
   .logo-box {
-    width: 148px;
+    width: 150px;
+    height: 24px;
   }
   .logo-box__toggle {
     display: none;
