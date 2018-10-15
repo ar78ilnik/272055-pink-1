@@ -1,5 +1,106 @@
 /*form/form.less*/
 
+.form__name {
+  border: none;
+  line-height: 30px;
+  font-family: "Open Sans";
+  margin-bottom: 48px;
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 17px;
+  }
+  &-label {
+    font-size: 14px;
+    line-height: 34px;
+    padding-left: 10px;
+    color: #d22856;
+  }
+  &-input {
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 16px 3% 15px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  &-input:hover {
+    border: 2px solid #273545;
+  }
+}
+.form__progress {
+  border: none;
+  font-size: 14px;
+  color: #d22856;
+  font-family: "Open Sans";
+  text-align: center;
+  background-color: #f2f2f2;
+  &_legend-check {
+    margin-bottom: 36px;
+  }
+  &_box {
+    width: 100%;
+  }
+  &_input {
+    color: #283645;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 14px 10px 15px;
+    margin-bottom: 17px;
+  }
+  &_input-check {
+    display: none;
+  }
+  &_label {
+    display: block;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+    color: #283645;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin-bottom: 52px;
+  }
+  &_label_checkbox {
+    width: 75%;
+    cursor: pointer;
+    position: relative;
+    padding-left: 58px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+    &::before {
+      width: 35px;
+      height: 35px;
+      top: -4px;
+      left: -11px;
+      border: 2px solid #e5e5e5;
+      background-color: #fff;
+      &:hover {
+        border: 2px solid #273545;
+      }
+    }
+  }
+  &_input[id="1"]:checked + &_label[for="1"]::after,
+  &_input[id="2"]:checked + &_label[for="2"]::after,
+  &_input[id="3"]:checked + &_label[for="3"]::after,
+  &_input[id="4"]:checked + &_label[for="4"]::after,
+  &_input[id="5"]:checked + &_label[for="5"]::after,
+  &_input[id="6"]:checked + &_label[for="6"]::after {
+      width: 21px;
+      height: 21px;
+      top: 2px;
+      left: -1px;
+      background: url(../img/icon-tick.svg) no-repeat center;
+    }
+}
+
 @media screen and (min-width: 660px) {
   .form {
     display: flex;
