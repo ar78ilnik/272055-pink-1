@@ -40,9 +40,10 @@
       <h1 class="header__h1 header__h1_noindex">Конкурс на самое безбашенное путешествие с Гинк</h1>
     </div>
   </header>
-  <main class="main wrapper">
+  <main class="main main_form wrapper">
     <div class="main__slogan main__slogan_noindex">
       Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      <span class="main__slogan_noindex main__slogan_noindex_visible">Пожалуйста, заполните форму ниже:</span>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="form__name">
@@ -60,7 +61,7 @@
         </p>
       </fieldset>
       <fieldset class="form__progress">
-        <legend class="form__progress_legend-check">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+        <legend class="form__progress-legend">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
         <p class="form__progress_box">
           <input class="form__progress_input form__progress_input-check" type="checkbox" id="1" name="1" checked>
           <label class="form__progress_label form__progress_label_checkbox" for="1">Сделал селфи с акулой</label>
@@ -87,44 +88,49 @@
         </p>
       </fieldset>
       <fieldset class="form__contact">
+        <legend class="form__contact-legend">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
         <p class="form__contact_par">
-          <label class="form__dates" for="phone">
+          <label class="form__contact-dates" for="phone">
             НОМЕР ТЕЛЕФОНА
           </label>
           <input class="form__input-button" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"/>
         </p>
         <p class="form__contact_par">
-          <label class="form__dates" for="mail">
+          <label class="form__contact-dates" for="mail">
             АДРЕС ПОЧТЫ
           </label>
           <input class="form__input-button" type="email" name="email" id="mail" required placeholder="Введите почту *">
         </p>
       </fieldset>
       <fieldset class="form__app">
+        <legend class="form__app-legend">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
         <p class="form__app_par">
-          <input type="radio" name="app" id="ios" value="ios">
-          <label for="ios">
-            Pink для iOS
+          <label>
+            <input class="form__app-input" type="radio" name="app" value="ios">
+            <span class="form__app-custom"></span>
+            <span class="form__app-label">Pink для iOS</span>
           </label>
         </p>
         <p class="form__app_par">
-          <input type="radio" name="app" id="android" value="android">
-          <label for="android">
-            Pink на Android
+          <label>
+            <input class="form__app-input" type="radio" name="app" value="android">
+            <span class="form__app-custom"></span>
+            <span class="form__app-label">Pink для Android</span>
           </label>
         </p>
         <p class="form__app_par">
-          <input type="radio" name="app" id="wp" value="wp">
-          <label for="wp">
-            Windows Phone
+          <label>
+            <input class="form__app-input" type="radio" name="app" value="wp">
+            <span class="form__app-custom"></span>
+            <span class="form__app-label">Pink для Windows Phone</span>
           </label>
         </p>
       </fieldset>
       <fieldset class="form__message">
-        <label class="form__label form__label_message" for="mess">
+        <label class="form__message-label for="mess">
           ОПИШИТЕ СВОИ ЭМОЦИИ
         </label>
-        <textarea class="form__input form__input_message" id="mess" name="message">
+        <textarea class="form__message_area" id="mess" name="message">
           Можно прям в красках, не стесняясь в выражениях
         </textarea>
       </fieldset>
@@ -137,10 +143,10 @@
     </form>
   </main>
   <footer class="footer wrapper">
-    <div class="logo">
+    <div class="logo-box logo-box__footer">
       Pink
     </div>
-    <section class="footer-social">
+    <section class="footer-social footer-social_form">
       <h2 class="visually-hiden">Социальные сети</h2>
       <a class="footer-social__button footer-social__button_twitter" href="#">twitter</a>
       <a class="footer-social__button footer-social__button_facebook" href="#">facebook</a>
